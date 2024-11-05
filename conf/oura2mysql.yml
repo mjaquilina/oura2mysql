@@ -1,0 +1,59 @@
+---
+database:
+    server: localhost
+    username: oura
+    password: oura
+    db_name: oura
+    full_archive_table: full_archive
+endpoints:
+    daily_activity:
+        oura_fields:
+           - name: day
+             type: date
+           - name: score
+           - name: steps
+           - name: total_calories
+    daily_cardiovascular_age:
+        oura_fields:
+           - name: day
+             type: date
+           - name: vascular_age
+    daily_readiness:
+        oura_fields:
+           - name: day
+             type: date
+           - name: score
+           - name: temperature_deviation
+    daily_sleep:
+        oura_fields:
+           - name: day
+             type: date
+           - name: score
+    daily_stress:
+        oura_fields:
+           - name: day
+             type: date
+           - name: stress_high
+           - name: recovery_high
+    enhanced_tag:
+        oura_fields:
+           - name: tag_typecode
+             type: string
+    sleep:
+        oura_fields:
+           - name: day
+             type: date
+           - name: awake_time
+           - name: average_heart_rate
+           - name: bedtime_end
+             type: datetime
+           - name: bedtime_start
+             type: datetime
+           - name: deep_sleep_duration
+           - name: efficiency
+           - name: latency
+           - name: light_sleep_duration
+           - name: lowest_heart_rate
+           - name: time_in_bed
+           - name: rem_sleep_duration
+           - name: total_sleep_duration
